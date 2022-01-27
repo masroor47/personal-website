@@ -1,0 +1,20 @@
+
+
+
+
+.nav-with-logo {
+    display: flex;
+}
+
+.logo {
+    padding: 20px
+}
+
+.nav-container {
+    
+}
+
+.nav-container li {
+    display: inline-block;
+    padding: 10px;
+}
