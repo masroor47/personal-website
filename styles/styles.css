@@ -1,4 +1,7 @@
-
+* {
+    padding: 0;
+    margin: 0;
+}
 
 
 
@@ -28,6 +31,15 @@
 
 
 
+.header-image {
+    background-image: url(../images/cityview-wide-2400.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 20vw;
+    object-fit: cover;
+    background-position: center;
+    
+}
 
 
 
