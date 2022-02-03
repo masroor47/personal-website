@@ -29,6 +29,10 @@ body {
     
         transform: translateX(100%);
     }
+
+    .nav-container[data-visible="true"] {
+        transform: translateX(0%);
+    }
     
     .nav-container li {
         list-style: none;
