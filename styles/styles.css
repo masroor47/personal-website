@@ -12,6 +12,7 @@
     top: 2rem;
     right: 2rem;
     z-index: 9;
+    display: block;
 }
 .nav-container {
     display: flex;
