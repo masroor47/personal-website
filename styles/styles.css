@@ -39,13 +39,12 @@ nav {
     min-width: 25rem;
 
     z-index: 9;
-    /* For  */
+
+    /* Padding for sidebar top space */
     padding: 8rem;
 
     transform: translateX(100%);
     
-    
-
 }
 .nav-container li {
     list-style: none;
@@ -55,9 +54,15 @@ header a {
     text-decoration: none;
 }
 
+/* If data-visible is true, slide the sidenav into the view */
 .nav-container[data-visible="true"] {
     transform: translateX(0);
     transition: transform 300ms ease-in;
+}
+
+
+.nav-container li:hover {
+    background-color: burlywood;
 }
 
 
@@ -81,7 +86,6 @@ header a {
         /* Reset mobile sidenav hiding */
         transform: translateX(0);
     }
-    
 }
 
 
