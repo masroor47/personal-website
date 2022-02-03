@@ -4,66 +4,57 @@
     box-sizing: border-box;
 }
 
-body {
 
-    overflow-x: hidden;
-}
+
 
 header {
+    background-color: antiquewhite;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: steelblue;
+    padding: 0;
+    height: 6rem;
 }
+.mobile-nav-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 99;
 
-.logo {
+    aspect-ratio: 1;
+}
+nav {
+    background-color: aqua;
+    height: 100%;
+}
+.nav-container {
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    min-width: 25rem;
+
+    padding: 8rem;
+
+}
+.nav-container li {
+    list-style: none;
     padding: 2rem;
 }
-
-/* @media screen and (max-width: 699px) { */
-    .mobile-nav-toggle {
-        position: absolute;
-        aspect-ratio: 1;
-        top: 2rem;
-        right: 2rem;
-        z-index: 9;
-        display: block;
-    }
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        inset: 0 0 0 30%;
-        background-color: steelblue;
-        padding: 80px 20px;
-        margin: 0;
-    
-        transform: translateX(100%);
-        transition: transform 350ms ease-out;
-    }
-
-    .nav-container[data-visible="true"] {
-        transform: translateX(0%);
-    }
-    
-    .nav-container li {
-        list-style: none;
-    }
-    
-    
-    .nav-container a {
-        text-decoration: none;
-        padding: 0;
-        margin: 0;
-    
-    }
-    .nav-container li:hover {
-        background-color: brown;
-        color: yellow;
-    }
-/* } */
+header a {
+    text-decoration: none;
+}
 
 
+
+
+
+
+/* DESKTOP */
 @media screen and (min-width: 700px) {
 
     .mobile-nav-toggle {
@@ -72,26 +63,18 @@ header {
 
     .nav-container {
         flex-direction: row;
-        justify-content: end;
         position: relative;
-        inset: 0 0 0 0;
+        height: 100%;
+
         padding: 0;
-        margin: 0;
-
-        transform: translateX(0%);
     }
-
-    .nav-container li {
-        display: inline-block;
-        padding: 20px;
-        margin: 0px;
-        list-style: none;
-        transition: 0.3s;
-    }
-    /* .nav-container li:first-child {
-        margin-right: auto;
-    } */
+    
 }
+
+
+
+
+
 
 
 
