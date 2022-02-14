@@ -18,7 +18,10 @@ nav {
     background-color: antiquewhite;
 }
 nav .logo {
-    margin-left: 0.5rem;
+    margin-left: 2rem;
+}
+nav .logo a {
+    text-decoration: none;
 }
 
 .nav-container li {
