@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+.content-wrap {
+    padding: 5rem;
+}
 
 /* NAVBAR */
 
@@ -100,10 +103,31 @@ nav .logo {
 }
 
 
+.header-quote {
+    text-align: center;
+    display: block;
+    padding-top: 3rem;
+}
+
+/* ABOUT ME */
+.about-me {
+    background-color: beige;
+}
+
+.about-me .content-wrap {
+    padding: 5rem;
+}
 
 
+/* PROJECTS */
+.projects {
+    background-color: aquamarine;
+}
 
-
+/* WORK EXPERIENCE */
+.work-experience {
+    background-color: lightblue;
+}
 
 
 
@@ -132,8 +156,24 @@ footer li {
 }
 footer a {
     text-decoration: none;
-    transition: 3s;
+    transition: 0.3s;
  }
 footer a:hover {
     text-decoration: underline;
+}
+/* Mobile */
+@media screen and (max-width: 699px) {
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 700px) {
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+    }
 }
