@@ -6,7 +6,7 @@ navToggle.addEventListener("click", () => {
 
     if (visibility === "false") {
         navContainer.setAttribute("data-visible", "true");
-        navToggle.innerHTML = "close";
+        navToggle.innerHTML = "Close";
     } else {
         navContainer.setAttribute("data-visible", "false");
         navToggle.innerHTML = "Menu";
